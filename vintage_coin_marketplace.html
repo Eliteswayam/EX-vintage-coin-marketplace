@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vintage Coin Marketplace</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f4e3;
+      margin: 0;
+      padding: 0;
+      color: #4b3621;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4b3621, #d4af37);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4b3621;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #d4af37;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b18f30;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      background: #4b3621;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    form input, form textarea, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vintage Coin Marketplace</h1>
+    <p>Buy & Sell Rare Treasures</p>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Explore a world of rare and collectible coins, stamps, and antiques. Connect with collectors, buy or sell items, and rediscover history through timeless treasures.</p>
+    <a href="#sell" class="btn">Sell Your Coin</a>
+  </section>
+
+  <section id="shop">
+    <h2>Shop</h2>
+    <input type="text" placeholder="Search coins by country, year, or metal" />
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ancient_coin.jpg" alt="Ancient Coin">
+        <h3>Roman Silver Denarius</h3>
+        <p>Year: 211 BC</p>
+        <p><strong>Price:</strong> ₹3,500</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Indian_1_rupee_coin_1964.jpg" alt="Indian Coin">
+        <h3>Indian 1 Rupee 1964</h3>
+        <p>Year: 1964</p>
+        <p><strong>Price:</strong> ₹500</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sell">
+    <h2>Sell Your Coin</h2>
+    <form>
+      <label>Coin Title:</label>
+      <input type="text" placeholder="e.g., British Penny 1901" required>
+
+      <label>Description:</label>
+      <textarea placeholder="Write details about your coin..." required></textarea>
+
+      <label>Price (INR):</label>
+      <input type="number" placeholder="Enter price" required>
+
+      <label>Negotiable:</label>
+      <select>
+        <option>Fixed Price</option>
+        <option>Negotiable</option>
+      </select>
+
+      <label>Upload Image:</label>
+      <input type="file" accept="image/*">
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <section id="verify">
+    <h2>Coin Verification</h2>
+    <p>Upload your coin for AI-based verification. This feature will help confirm the authenticity of your coin before trading.</p>
+    <button class="btn">Verify My Coin</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>📧 Email: support@vintagecoinmarketplace.com</p>
+    <p>Follow us on social media for updates and rare finds!</p>
+  </section>
+
+  <footer>
+    © 2025 VintageCoin Marketplace | All Rights Reserved
+  </footer>
+</body>
+</html>
